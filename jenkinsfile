@@ -8,7 +8,7 @@ pipeline {
         }
         stage('testing') {
             steps {
-                echo 'proses testing app......'
+                sh 'npm test'
             }
         }
         stage('deployment') {
